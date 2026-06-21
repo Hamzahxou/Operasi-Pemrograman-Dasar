@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Perbandingan - Pemrograman Dasar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 p-5 md:p-10">
+    <div
+      class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100"
+    >
+      <a
+        href="../materi.html"
+        class="text-blue-600 font-semibold mb-6 block hover:text-blue-800"
+        >&larr; Kembali ke Daftar Materi</a
+      >
+
+      <header class="mb-8 border-b pb-6">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
+          Operator Perbandingan
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Digunakan untuk membandingkan dua nilai dan menghasilkan nilai boolean
+          (true atau false).
+        </p>
+      </header>
+
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-blue-600 text-white">
+              <th class="p-4">Operator</th>
+              <th class="p-4">Penjelasan</th>
+              <th class="p-4">Contoh</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">==</td>
+              <td class="p-4">Sama dengan</td>
+              <td class="p-4">5 == 5 (true)</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">===</td>
+              <td class="p-4">Identik (tipe & nilai)</td>
+              <td class="p-4">5 === "5" (false)</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">!=</td>
+              <td class="p-4">Tidak sama dengan</td>
+              <td class="p-4">5 != 3 (true)</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">></td>
+              <td class="p-4">Lebih besar</td>
+              <td class="p-4">10 > 5 (true)</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold"><=</td>
+              <td class="p-4">Lebih kecil sama dengan</td>
+              <td class="p-4">5 <= 5 (true)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold text-gray-800">Penting: == vs ===</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Banyak pemula bingung dengan dua ini.
+          <br /><b>== (Equal)</b> hanya membandingkan <b>nilainya saja</b>.
+          <br /><b>=== (Strict Equal)</b> membandingkan
+          <b>nilai DAN tipe datanya</b>. Dalam praktik industri, disarankan
+          untuk selalu menggunakan <code>===</code> agar hasil perbandingan
+          lebih akurat dan terhindar dari *bug*.
+        </p>
+
+        <div
+          class="bg-gray-900 text-green-400 p-6 rounded-2xl font-mono text-sm md:text-base"
+        >
+          <span class="text-blue-400">// Contoh Perbandingan</span><br />
+          let a = 10;<br />
+          console.log(a == "10");
+          <span class="text-gray-500">// true (karena nilai sama)</span><br />
+          console.log(a === "10");
+          <span class="text-gray-500"
+            >// false (karena tipe data beda, angka vs string)</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

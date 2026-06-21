@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Penugasan - Pemrograman Dasar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 p-5 md:p-10">
+    <div
+      class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100"
+    >
+      <a
+        href="../materi.html"
+        class="text-blue-600 font-semibold mb-6 block hover:text-blue-800"
+        >&larr; Kembali ke Daftar Materi</a
+      >
+
+      <header class="mb-8 border-b pb-6">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
+          Operator Penugasan
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Operator ini digunakan untuk memberikan nilai ke dalam suatu variabel.
+        </p>
+      </header>
+
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-blue-600 text-white">
+              <th class="p-4">Operator</th>
+              <th class="p-4">Contoh</th>
+              <th class="p-4">Sama dengan</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">=</td>
+              <td class="p-4">x = 10</td>
+              <td class="p-4">x = 10</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">+=</td>
+              <td class="p-4">x += 5</td>
+              <td class="p-4">x = x + 5</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">-=</td>
+              <td class="p-4">x -= 2</td>
+              <td class="p-4">x = x - 2</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">*=</td>
+              <td class="p-4">x *= 3</td>
+              <td class="p-4">x = x * 3</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">/=</td>
+              <td class="p-4">x /= 2</td>
+              <td class="p-4">x = x / 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold text-gray-800">
+          Mengapa pakai operator penugasan singkat?
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          Penggunaan operator seperti <code>+=</code> adalah cara yang lebih
+          ringkas (shorthand) untuk memperbarui nilai variabel. Ini sangat
+          sering digunakan dalam perulangan (*looping*) atau saat menambahkan
+          skor pada game sederhana.
+        </p>
+
+        <div
+          class="bg-gray-900 text-green-400 p-6 rounded-2xl font-mono text-sm md:text-base"
+        >
+          <span class="text-blue-400">// Contoh Skor Game</span><br />
+          let skor = 0;<br />
+          skor += 10;
+          <span class="text-gray-500">// Skor sekarang menjadi 10</span><br />
+          skor += 5;
+          <span class="text-gray-500">// Skor sekarang menjadi 15</span><br />
+          console.log(skor);
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Aritmatika - Pemrograman Dasar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 p-5 md:p-10">
+    <div
+      class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100"
+    >
+      <a
+        href="../materi.html"
+        class="text-blue-600 font-semibold mb-6 block hover:text-blue-800"
+        >&larr; Kembali ke Daftar Materi</a
+      >
+
+      <header class="mb-8 border-b pb-6">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
+          Operator Aritmatika
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Operator yang digunakan untuk melakukan operasi matematika dasar pada
+          variabel atau nilai.
+        </p>
+      </header>
+
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-blue-600 text-white">
+              <th class="p-4 rounded-tl-lg">Operator</th>
+              <th class="p-4">Nama</th>
+              <th class="p-4 rounded-tr-lg">Contoh (a=10, b=3)</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">+</td>
+              <td class="p-4">Penjumlahan</td>
+              <td class="p-4">a + b = 13</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">-</td>
+              <td class="p-4">Pengurangan</td>
+              <td class="p-4">a - b = 7</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">*</td>
+              <td class="p-4">Perkalian</td>
+              <td class="p-4">a * b = 30</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">/</td>
+              <td class="p-4">Pembagian</td>
+              <td class="p-4">a / b = 3.33</td>
+            </tr>
+            <tr class="border-b">
+              <td class="p-4 font-mono font-bold">%</td>
+              <td class="p-4">Modulus (Sisa Bagi)</td>
+              <td class="p-4">a % b = 1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold text-gray-800">
+          Penjelasan Khusus: Modulus (%)
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          Modulus mungkin terdengar asing bagi pemula. Operator ini memberikan
+          <b>sisa pembagian</b>. Dalam contoh 10 % 3, angka 3 masuk ke dalam 10
+          sebanyak 3 kali (3x3 = 9), sisa dari 10 adalah <b>1</b>.
+        </p>
+
+        <div
+          class="bg-gray-900 text-green-400 p-6 rounded-2xl font-mono text-sm md:text-base"
+        >
+          <span class="text-blue-400">// Contoh Penggunaan</span><br />
+          let harga = 50000;<br />
+          let diskon = 5000;<br />
+          let total = harga - diskon;<br />
+          <br />
+          console.log("Total harga setelah diskon: " + total);
+          <span class="text-gray-500">// Output: 45000</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

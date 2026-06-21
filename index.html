@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Pemrograman Dasar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Animasi Kustom Sederhana */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      .floating {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-5 relative overflow-hidden"
+  >
+    <div
+      class="absolute -top-10 -left-10 w-40 h-40 bg-blue-200 rounded-full opacity-50"
+    ></div>
+    <div
+      class="absolute -bottom-10 -right-10 w-60 h-60 bg-blue-300 rounded-full opacity-50"
+    ></div>
+
+    <div
+      class="bg-white p-10 rounded-3xl shadow-2xl w-full max-w-4xl z-10 relative"
+    >
+      <header class="text-center mb-12 flex flex-col items-center">
+        <div
+          class="bg-blue-100 text-blue-600 p-4 rounded-full mb-6 floating shadow-lg"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-12 w-12"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+            />
+          </svg>
+        </div>
+        <h1
+          class="xl:text-5xl text-2xl font-extrabold text-gray-900 mb-3 tracking-tight"
+        >
+          Operasi <span class="text-blue-600">Pemrograman Dasar</span>
+        </h1>
+        <p class="text-sm xl:text-xl text-gray-600 max-w-xl mx-auto">
+          Selamat Datang! Media ini akan membantu Anda memahami dasar-dasar
+          logika informatika dengan mudah.
+        </p>
+      </header>
+
+      <nav
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl mx-auto"
+      >
+        <a
+          href="tujuan.html"
+          class="flex items-center gap-5 bg-gray-50 p-6 rounded-2xl shadow border border-gray-100 hover:bg-blue-600 hover:text-white hover:scale-105 transition-all duration-300"
+        >
+          <div class="bg-blue-100 text-blue-600 p-3 rounded-xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Tujuan Pembelajaran</h3>
+            <p class="text-sm opacity-80">Apa yang akan Anda pelajari</p>
+          </div>
+        </a>
+
+        <a
+          href="materi.html"
+          class="flex items-center gap-5 bg-gray-50 p-6 rounded-2xl shadow border border-gray-100 hover:bg-blue-600 hover:text-white hover:scale-105 transition-all duration-300"
+        >
+          <div class="bg-blue-100 text-blue-600 p-3 rounded-xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Materi Utama</h3>
+            <p class="text-sm opacity-80">Penjelasan operator dasar</p>
+          </div>
+        </a>
+
+        <a
+          href="evaluasi.html"
+          class="flex items-center gap-5 bg-gray-50 p-6 rounded-2xl shadow border border-gray-100 hover:bg-blue-600 hover:text-white hover:scale-105 transition-all duration-300"
+        >
+          <div class="bg-blue-100 text-blue-600 p-3 rounded-xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002 -2V7a2 2 0 00-2 -2h-2M9 5a2 2 0 002 2h2a2 2 0 002 -2M9 5a2 2 0 012 -2h2a2 2 0 012 2"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Evaluasi/Kuis</h3>
+            <p class="text-sm opacity-80">Uji pemahaman Anda</p>
+          </div>
+        </a>
+
+        <a
+          href="referensi.html"
+          class="flex items-center gap-5 bg-gray-50 p-6 rounded-2xl shadow border border-gray-100 hover:bg-blue-600 hover:text-white hover:scale-105 transition-all duration-300"
+        >
+          <div class="bg-blue-100 text-blue-600 p-3 rounded-xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 10-5.656-5.656l-1.1 1.1"
+              />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Referensi</h3>
+            <p class="text-sm opacity-80">Sumber belajar tambahan</p>
+          </div>
+        </a>
+      </nav>
+
+      <footer class="mt-16 text-center text-gray-500 text-sm">
+        UAS Media Pembelajaran Kejuruan | © 2024
+      </footer>
+    </div>
+  </body>
+</html>

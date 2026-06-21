@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika - Pemrograman Dasar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 p-5 md:p-10">
+    <div
+      class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-3xl shadow-lg border border-gray-100"
+    >
+      <a
+        href="../materi.html"
+        class="text-blue-600 font-semibold mb-6 block hover:text-blue-800"
+        >&larr; Kembali ke Daftar Materi</a
+      >
+
+      <header class="mb-8 border-b pb-6">
+        <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">
+          Operator Logika
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Digunakan untuk menggabungkan dua atau lebih kondisi logika.
+        </p>
+      </header>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 text-lg">AND (&&)</h3>
+          <p class="text-sm text-gray-600">
+            Hasilnya TRUE jika <b>semua</b> kondisi bernilai benar.
+          </p>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 text-lg">OR (||)</h3>
+          <p class="text-sm text-gray-600">
+            Hasilnya TRUE jika <b>salah satu</b> kondisi bernilai benar.
+          </p>
+        </div>
+        <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+          <h3 class="font-bold text-blue-700 text-lg">NOT (!)</h3>
+          <p class="text-sm text-gray-600">
+            Membalikkan nilai logika (TRUE jadi FALSE).
+          </p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">
+        Tabel Kebenaran (AND)
+      </h2>
+      <div class="overflow-x-auto mb-8">
+        <table
+          class="w-full text-center border-collapse border border-gray-200"
+        >
+          <tr class="bg-gray-100 font-bold">
+            <td class="p-3 border">Kondisi A</td>
+            <td class="p-3 border">Kondisi B</td>
+            <td class="p-3 border">A && B</td>
+          </tr>
+          <tr>
+            <td class="p-3 border">TRUE</td>
+            <td class="p-3 border">TRUE</td>
+            <td class="p-3 border font-bold text-green-600">TRUE</td>
+          </tr>
+          <tr>
+            <td class="p-3 border">TRUE</td>
+            <td class="p-3 border">FALSE</td>
+            <td class="p-3 border font-bold text-red-600">FALSE</td>
+          </tr>
+          <tr>
+            <td class="p-3 border">FALSE</td>
+            <td class="p-3 border">FALSE</td>
+            <td class="p-3 border font-bold text-red-600">FALSE</td>
+          </tr>
+        </table>
+      </div>
+
+      <div
+        class="bg-gray-900 text-green-400 p-6 rounded-2xl font-mono text-sm md:text-base"
+      >
+        <span class="text-blue-400">// Contoh: Login Sistem</span><br />
+        let user = "admin";<br />
+        let pass = "12345";<br />
+        <br />
+        if (user === "admin" && pass === "12345") {<br />
+        &nbsp;&nbsp;console.log("Login Berhasil!");<br />
+        }
+      </div>
+    </div>
+  </body>
+</html>
